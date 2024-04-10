@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --basicAliveBlue: rgb(16, 14, 113);
+  --basicGoldenYellow: rgb(207, 200, 0);
+  --basicWhite: rgb(255, 255, 255);
+  --basicBlack: rgb(0, 0, 0);
+  --lightGreen: rgb(105, 238, 78);
+  --lightOrange: rgb(237, 159, 13);
+  --lightPurple: rgb(167, 0, 176);
+  --acquaBlue: rgb(0, 209, 220);
+  --moonSkyBlue: rgb(42, 18, 196);
+  /* To apply:
+    background-color: var(--YourColorTitle);
+*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/technologyBackground.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Comic Sans MS, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 2px;
+  font-size: 14px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.cardContainerArea {
+  background-image: linear-gradient(
+    90deg,
+    var(--lightGreen),
+    var(--lightOrange)
+  );
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  /* color: var(--basicWhite); */
+  color: black;
+  border-radius: 5px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cardContainerArea .PROArea {
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: var(--lightPurple);
+  color: var(--basicWhite);
+  padding: 3px 7px;
+}
+
+.cardContainerArea .rounded {
+  padding: 7px;
+  border: 1px solid var(--basicBlack);
+}
+
+button.primaryArea,
+.primaryAreaGhost {
+  padding: 10px 25px;
+  font-weight: 500;
+  font-family: Comic Sans MS, sans-serif;
+  background-color: var(--acquaBlue);
+  border: 1px solid var(--moonSkyBlue);
+  border-radius: 3px;
+}
+
+footer {
+  color: var(--basicWhite);
+}
+
+.skillsArea {
+  background-color: var(--moonSkyBlue);
+  color: var(--basicWhite);
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.skillsArea ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.skillsArea ul li {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 7px 7px 0;
+  border: 1px solid var(--basicWhite);
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 7px;
+  background-color: var(--lightPurple);
+  color: var(--basicWhite);
+}
+
+footer {
+  background-color: rgba(2,2,2,0.7);
+  color: var(--basicWhite);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+  text-decoration: none;
+}
